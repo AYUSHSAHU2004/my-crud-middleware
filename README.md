@@ -10,12 +10,11 @@ You can install the package via npm:
 npm install mongo-crud-middleware
 
 
-```
-//Server Setup Example
+Server Setup Example
 
-//Here’s an example of how to set up your Express server with the `mongo-crud-middleware`:
+Here’s an example of how to set up your Express server with the `mongo-crud-middleware`:
 
-const express = require('express');
+```const express = require('express');
 const app = express();
 
 app.use(express.json()); // Middleware to parse incoming JSON requests
@@ -40,11 +39,12 @@ app.use('/api/products', (req, res, next) => {
 
 app.listen(3000, () => {
     console.log('Server running on port 3000');
-});
+}); 
 
-//GET Request Example
 
-fetch('/api/products', {
+GET Request Example
+
+```fetch('/api/products', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -58,9 +58,11 @@ fetch('/api/products', {
 .then(data => console.log('Fetched Product:', data))
 .catch(error => console.error('Error:', error)); 
 
-//POST Request
 
-fetch('/api/products', {
+
+POST Request
+
+```fetch('/api/products', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -79,8 +81,8 @@ fetch('/api/products', {
 .then(data => console.log('Created Product:', data))
 .catch(error => console.error('Error:', error));
 
-//PUT Request
-fetch('/api/products', {
+PUT Request
+```fetch('/api/products', {
     method: 'PUT',
     headers: {
         'Content-Type': 'application/json',
@@ -98,9 +100,8 @@ fetch('/api/products', {
 .then(data => console.log('Updated Product:', data))
 .catch(error => console.error('Error:', error));
 
-//DELETE Request
-
-fetch('/api/products', {
+DELETE Request
+```fetch('/api/products', {
     method: 'DELETE',
     headers: {
         'Content-Type': 'application/json',
@@ -110,7 +111,7 @@ fetch('/api/products', {
         fieldValues: [12345] // The fieldValue  to delete  (e.g., product id)
     })
 })
-.then(response => response.json())```
+.then(response => response.json());
 
 
 

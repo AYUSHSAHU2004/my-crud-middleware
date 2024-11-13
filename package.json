@@ -1,6 +1,6 @@
 {
   "name": "mongo-crud-middleware",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A dynamic CRUD middleware for Express.js that handles database operations based on frontend input.",
 "main": "lib/index.js",
   "scripts": {
