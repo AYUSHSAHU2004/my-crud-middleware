@@ -2,7 +2,7 @@
   "name": "mongo-crud-middleware",
   "version": "1.0.0",
   "description": "A dynamic CRUD middleware for Express.js that handles database operations based on frontend input.",
-  "main": "index.js",  
+"main": "lib/index.js",
   "scripts": {
     "start": "nodemon index.js",
     "dev": "nodemon index.js"
@@ -24,10 +24,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/AYUSHSAHU2004/my-crud-middleware"
+    "url": "git+https://github.com/AYUSHSAHU2004/my-crud-middleware.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/my-crud-middleware/issues"
+    "url": "https://github.com/AYUSHSAHU2004/my-crud-middleware/issues"
   },
-  "homepage": "https://github.com/yourusername/my-crud-middleware#readme"
+  "homepage": "https://github.com/AYUSHSAHU2004/my-crud-middleware#readme"
 }
